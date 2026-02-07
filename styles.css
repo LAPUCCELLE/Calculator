@@ -1,0 +1,133 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #FFF0E8;
+    font-family: Satoshi;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.rectangle {
+    width: 360px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.display {
+    height: 100px;           
+    color: #ffffff;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: transparent; 
+    padding: 0;                   
+    border-radius: 0;              
+    margin: 0;                    
+}
+
+.screen {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 14px 20px;      
+    margin-bottom: 20px;     
+    display: flex;
+    flex-direction: column;
+    gap: 6px;               
+}
+
+.display-prev {
+    height: 22px;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0;              
+    margin-bottom: -30px;               
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.operator {
+    background-color: #ff9500;
+    color: white;
+    font-size: 1.8rem;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.operator:hover {
+    background-color: #ffa733;
+}
+
+.operator:active {
+    transform: scale(0.95);
+}
+
+.ac {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.equals {
+    background-color: #ff9500;
+    grid-row: auto;
+}
+
+.func {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.back {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.number {
+    background-color: #333;
+    color: white;
+    font-size: 1.8rem;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.number:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.number:active {
+    transform: scale(0.95);
+}
+
+.zero {
+    grid-column: span 2;
+}
